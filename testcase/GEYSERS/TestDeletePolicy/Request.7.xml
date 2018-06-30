@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" ReturnPolicyIdList="true" CombinedDecision="false">
+    <Attributes Category="unknown" DataType="http://www.w3.org/2001/XMLSchema#string">
+        <Attribute AttributeId="http://authz-interop.org/AAA/xacml/resource/resource-type" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">http://geysers.eu/upperlicl/resource/resource-type/VLink</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="unknown" DataType="http://www.w3.org/2001/XMLSchema#string">
+        <Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MLI:ReplanningVI:Add-VLink</AttributeValue>
+        </Attribute>
+    </Attributes>
+</Request>

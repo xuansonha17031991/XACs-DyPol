@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" ReturnPolicyIdList="true" CombinedDecision="false">
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">
+        <Attribute AttributeId="user-id" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor-Patient</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="role" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">
+        <Attribute AttributeId="resource-type" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Patient.Record</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:management-info:status" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">AvailableNurseDoctor</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:record:department" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Heart</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:record:assigned-doctor-id" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor-Patient</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action">
+        <Attribute AttributeId="action-type" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Read</AttributeValue>
+        </Attribute>
+    </Attributes>
+</Request>

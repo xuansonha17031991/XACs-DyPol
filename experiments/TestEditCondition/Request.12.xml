@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Request xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" ReturnPolicyIdList="true" CombinedDecision="false">
+    <Attributes Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">
+        <Attribute AttributeId="user-id" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor-Non-Patient</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="role" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="position" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Resident</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource">
+        <Attribute AttributeId="resource-type" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Patient.Record</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:management-info:status" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">NotAvailableNurseDoctor</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:management-info:conscious-status" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Conscious</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:record:department" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Heart</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:emgergency-agreement:medical-staff" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Doctor-Non-Patient</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:emgergency-agreement:start-time" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#double">1.52472926864E12</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="patient:emgergency-agreement:end-time" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#double">1.52473646864E12</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action">
+        <Attribute AttributeId="action-type" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Read</AttributeValue>
+        </Attribute>
+    </Attributes>
+    <Attributes Category="urn:oasis:names:tc:xacml:3.0:attribute-category:environment">
+        <Attribute AttributeId="location" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Heart</AttributeValue>
+        </Attribute>
+        <Attribute AttributeId="current-time" IncludeInResult="false">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#double">1.52473286864E12</AttributeValue>
+        </Attribute>
+    </Attributes>
+</Request>
